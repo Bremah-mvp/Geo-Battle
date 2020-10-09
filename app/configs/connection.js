@@ -10,8 +10,8 @@ var sequelize = new Sequelize("battler_db", "root", "", {
   host: "localhost",
   port: 3306,
   dialect: "mysql",
-  //database: "geo_battle",
-  //password: "",
+  database: "geo_battle",
+  password: "",
   password: "Bremen12345$",
   database: "battler_db",
   pool: {
