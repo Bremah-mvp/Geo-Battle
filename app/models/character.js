@@ -1,18 +1,19 @@
 module.exports = function(sequelize, DataTypes) {
     // Creates a "Book" model that matches up with DB
-    var Battler = sequelize.define("battler_db", {
-        name: Sequelize.STRING,
-        hitPoints: Sequelize.INTEGER,
-        attack: Sequelize.INTEGER,
-        defense: Sequelize.INTEGER,
-        damage: Sequelize.INTEGER,
-        speed: Sequelize.INTEGER,
-        player: Sequelize.BOOLEAN,
+    let Battler = sequelize.define("battler_db", {
+        name: DataTypes.STRING,
+        hitPoints: DataTypes.INTEGER,
+        attack: DataTypes.INTEGER,
+        defense: DataTypes.INTEGER,
+        damage: DataTypes.INTEGER,
+        speed: DataTypes.INTEGER,
+        player: DataTypes.BOOLEAN
+    });
 
     // Syncs with DB
-    Battler.sync();
+    return Battler;
 }
 
     // Makes the Book Model available for other files (will also create a table)
-    module.exports = Battler;
+    //module.exports = Battler;
     // module.exports = Character;

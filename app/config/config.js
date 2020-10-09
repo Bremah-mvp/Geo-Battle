@@ -1,8 +1,8 @@
 module.exports = {
   "development": {
-    "username": process.env.DB_USER,
-    "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
+    "username": "root",
+    "password": "root12345",
+    "database": "battler_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
